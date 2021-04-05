@@ -15,6 +15,8 @@
 		0C9CB5A4261B60970085BA7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9CB579261B60960085BA7A /* ContentView.swift */; };
 		0C9CB5A5261B60970085BA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9CB57A261B60970085BA7A /* Assets.xcassets */; };
 		0C9CB5A6261B60970085BA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C9CB57A261B60970085BA7A /* Assets.xcassets */; };
+		0CEA1D09261B7810005065D5 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA1D08261B7810005065D5 /* UserViewModel.swift */; };
+		0CEA1D0A261B7810005065D5 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEA1D08261B7810005065D5 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		0C9CB59A261B60970085BA7A /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9CB59E261B60970085BA7A /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		0C9CB5A0261B60970085BA7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CEA1D08261B7810005065D5 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,7 @@
 		0C9CB577261B60960085BA7A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0CEA1D07261B7711005065D5 /* ViewModel */,
 				0C9CB578261B60960085BA7A /* publisherApp.swift */,
 				0C9CB579261B60960085BA7A /* ContentView.swift */,
 				0C9CB57A261B60970085BA7A /* Assets.xcassets */,
@@ -149,6 +153,14 @@
 				0C9CB5A0261B60970085BA7A /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		0CEA1D07261B7711005065D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0CEA1D08261B7810005065D5 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C9CB5A3261B60970085BA7A /* ContentView.swift in Sources */,
+				0CEA1D09261B7810005065D5 /* UserViewModel.swift in Sources */,
 				0C9CB5A1261B60970085BA7A /* publisherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C9CB5A4261B60970085BA7A /* ContentView.swift in Sources */,
+				0CEA1D0A261B7810005065D5 /* UserViewModel.swift in Sources */,
 				0C9CB5A2261B60970085BA7A /* publisherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +419,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -458,6 +474,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -479,7 +497,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = brotherslabs.publisher;
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.victorbaleeiro.publisher;
 				PRODUCT_NAME = publisher;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -501,7 +520,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = brotherslabs.publisher;
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.victorbaleeiro.publisher;
 				PRODUCT_NAME = publisher;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
